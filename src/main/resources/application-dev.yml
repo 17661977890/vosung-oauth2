@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: vosung-auth-server
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://47.104.220.191:3306/vsc_au?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: vosung
+    password: Vosung@123
+    driverClassName: com.mysql.cj.jdbc.Driver
+    dbcp2:
+      max-idle: 5
+      max-wait-millis: 10000
+      min-idle: 2
+      initial-size: 3
+      validation-query: SELECT 1
+      time-between-eviction-runs-millis: 18800
+    tomcat:
+      jdbc-interceptors: ConnectionState;SlowQueryReport(threshold=50)
+  redis:
+    database: 0
+    host: 127.0.0.1
+    password: 123456
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 30
+        min-idle: 10
+        max-wait: -1
+        max-idle: 10
+    port: 6379
+server:
+  port: 8084
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 4
+    lease-expiration-duration-in-seconds: 12
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.2.210:8761/eureka/ #服务注册中心地址--开发环境
+    fetch-registry: true
+    registry-fetch-interval-seconds: 8
+

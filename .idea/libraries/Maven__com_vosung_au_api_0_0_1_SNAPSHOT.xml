@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.vosung:au-api:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vosung/au-api/0.0.1-SNAPSHOT/au-api-0.0.1-20190624.062554-25.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vosung/au-api/0.0.1-SNAPSHOT/au-api-0.0.1-20190624.062554-25-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vosung/au-api/0.0.1-SNAPSHOT/au-api-0.0.1-20190624.062554-25-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
