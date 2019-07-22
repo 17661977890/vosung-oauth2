@@ -4,9 +4,9 @@ spring:
   main:
     allow-bean-definition-overriding: true
   datasource:
-    url: jdbc:mysql://47.104.220.191:3306/vsc_au?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/vsc_au?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: vosung
-    password: Vosung@123
+    password:
     driverClassName: com.mysql.cj.jdbc.Driver
     dbcp2:
       max-idle: 5
