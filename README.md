@@ -16,6 +16,7 @@
 
 #### 注意事项：
 * 当我们请求  服务器ip:端口/login/oauth/token 参数：client（不同客户端的id） grant_type（授权验证方式：password） password（用户密码） username（用户名）
+* eg: postman测试：post请求 localhost:8080/login/oauth/token  form-data: username:admin | password:123456 | client:frontend | grant_type:password
 * 因为配置了网关，所以请求网关的端口，由网关路由转发到授权认证服务器进行用户的认证授权。
 
 
